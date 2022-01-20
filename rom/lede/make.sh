@@ -42,6 +42,8 @@ for i in $IDXS; do
 		sed -i "s%CONFIG_VERSION_BUG_URL=\".*\"%CONFIG_VERSION_BUG_URL=\"$CONFIG_VERSION_BUG_URL\"%" ./.config
 		sed -i "s%CONFIG_VERSION_SUPPORT_URL=\".*\"%CONFIG_VERSION_SUPPORT_URL=\"$CONFIG_VERSION_SUPPORT_URL\"%" ./.config
 		sed -i "s%CONFIG_VERSION_MANUFACTURER_URL=\".*\"%CONFIG_VERSION_MANUFACTURER_URL=\"$CONFIG_VERSION_MANUFACTURER_URL\"%" ./.config
+		sed -i '/# CONFIG_PACKAGE_kmod-usb-acm is not set/c\CONFIG_PACKAGE_kmod-usb-acm=y' ./.config
+		make defconfig
 		sleep 2
 		new_arch=$(cat .config | grep CONFIG_TARGET_ARCH_PACKAGES | cut -d\" -f2)
 		new_subarch=$(cat .config | grep -o  "CONFIG_TARGET_[a-z0-9]*_[a-z0-9]*=y" | sed 's/=y//' | cut -d_ -f3,4)
