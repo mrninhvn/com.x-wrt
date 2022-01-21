@@ -55,6 +55,7 @@ for i in $IDXS; do
 		sed -i '/# CONFIG_PACKAGE_openthread-br is not set/c\CONFIG_PACKAGE_openthread-br=y' ./.config
 		sed -i '/CONFIG_PACKAGE_openthread-br=m/c\CONFIG_PACKAGE_openthread-br=y' ./.config
 		grep openthread ./.config
+		make defconfig
 		set +x
 		[ "x$WORKFLOW" = x1 ] || {
 			# skip touch if WORKFLOW == 1
