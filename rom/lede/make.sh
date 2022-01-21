@@ -44,6 +44,7 @@ for i in $IDXS; do
 		sed -i "s%CONFIG_VERSION_MANUFACTURER_URL=\".*\"%CONFIG_VERSION_MANUFACTURER_URL=\"$CONFIG_VERSION_MANUFACTURER_URL\"%" ./.config
 		sed -i '/# CONFIG_PACKAGE_kmod-usb-acm is not set/c\CONFIG_PACKAGE_kmod-usb-acm=y' ./.config
 		sed -i '/# CONFIG_PACKAGE_openthread-br is not set/c\CONFIG_PACKAGE_openthread-br=y' ./.config
+		sed -i '/CONFIG_PACKAGE_openthread-br=m/c\CONFIG_PACKAGE_openthread-br=y' ./.config
 		grep openthread ./.config
 		sleep 2
 		new_arch=$(cat .config | grep CONFIG_TARGET_ARCH_PACKAGES | cut -d\" -f2)
