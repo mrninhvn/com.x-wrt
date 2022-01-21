@@ -51,7 +51,7 @@ for i in $IDXS; do
 		new_subarch=$(cat .config | grep -o  "CONFIG_TARGET_[a-z0-9]*_[a-z0-9]*=y" | sed 's/=y//' | cut -d_ -f3,4)
 		test -n "$last_arch" || last_arch=$new_arch
 		test -n "$last_subarch" || last_subarch=$new_subarch
-		make menuconfig
+		make oldconfig
 		# make defconfig
 		# sed -i '/# CONFIG_PACKAGE_openthread-br is not set/c\CONFIG_PACKAGE_openthread-br=y' ./.config
 		# sed -i '/CONFIG_PACKAGE_openthread-br=m/c\CONFIG_PACKAGE_openthread-br=y' ./.config
