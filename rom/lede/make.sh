@@ -34,6 +34,7 @@ for i in $IDXS; do
 		test -f .build_x/$cfg && continue
 		set -x
 		cp feeds/x/rom/lede/$cfg .config
+		make defconfig
 		sed -i "s/CONFIG_VERSION_NUMBER=\".*\"/CONFIG_VERSION_NUMBER=\"$CONFIG_VERSION_NUMBER\"/" ./.config
 		[ "x$i" != "x0" ] && \
 		sed -i "s/CONFIG_VERSION_DIST=\".*\"/CONFIG_VERSION_DIST=\"$CONFIG_VERSION_DIST\"/" ./.config
@@ -48,9 +49,9 @@ for i in $IDXS; do
 		test -n "$last_arch" || last_arch=$new_arch
 		test -n "$last_subarch" || last_subarch=$new_subarch
 
-		sh feeds/x/rom/lede/fix-config.sh	
-		make defconfig
-		grep openthread ./.config
+		# sh feeds/x/rom/lede/fix-config.sh	
+		# make defconfig	
+		# grep openthread ./.config
 
 		set +x
 		[ "x$WORKFLOW" = x1 ] || {
