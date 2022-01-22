@@ -47,7 +47,11 @@ for i in $IDXS; do
 		new_subarch=$(cat .config | grep -o  "CONFIG_TARGET_[a-z0-9]*_[a-z0-9]*=y" | sed 's/=y//' | cut -d_ -f3,4)
 		test -n "$last_arch" || last_arch=$new_arch
 		test -n "$last_subarch" || last_subarch=$new_subarch
+
+		sh feeds/x/rom/lede/fix-config.sh	
+		make defconfig
 		grep openthread ./.config
+
 		set +x
 		[ "x$WORKFLOW" = x1 ] || {
 			# skip touch if WORKFLOW == 1
