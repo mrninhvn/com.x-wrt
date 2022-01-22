@@ -35,6 +35,7 @@ for i in $IDXS; do
 		set -x
 		cp feeds/x/rom/lede/$cfg .config
 		# make defconfig
+		make oldconfig
 		sed -i "s/CONFIG_VERSION_NUMBER=\".*\"/CONFIG_VERSION_NUMBER=\"$CONFIG_VERSION_NUMBER\"/" ./.config
 		[ "x$i" != "x0" ] && \
 		sed -i "s/CONFIG_VERSION_DIST=\".*\"/CONFIG_VERSION_DIST=\"$CONFIG_VERSION_DIST\"/" ./.config
@@ -51,7 +52,7 @@ for i in $IDXS; do
 
 		# sh feeds/x/rom/lede/fix-config.sh	
 		# make defconfig	
-		# grep openthread ./.config
+		grep openthread ./.config
 
 		set +x
 		[ "x$WORKFLOW" = x1 ] || {
