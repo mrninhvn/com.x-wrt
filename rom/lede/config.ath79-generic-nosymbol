@@ -40,7 +40,6 @@ CONFIG_TARGET_ath79=y
 # CONFIG_TARGET_ipq806x is not set
 # CONFIG_TARGET_realtek is not set
 # CONFIG_TARGET_rockchip is not set
-# CONFIG_TARGET_arc770 is not set
 # CONFIG_TARGET_archs38 is not set
 # CONFIG_TARGET_omap is not set
 # CONFIG_TARGET_uml is not set
@@ -171,6 +170,7 @@ CONFIG_TARGET_MULTI_PROFILE=y
 # CONFIG_TARGET_ath79_generic_DEVICE_nec_wg800hp is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_netgear_ex6400 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_netgear_ex7300 is not set
+# CONFIG_TARGET_ath79_generic_DEVICE_netgear_ex7300-v2 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_netgear_wndr3700 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_netgear_wndr3700-v2 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_netgear_wndr3800 is not set
@@ -323,6 +323,7 @@ CONFIG_TARGET_MULTI_PROFILE=y
 # CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wr710n-v2.1 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wr810n-v1 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wr810n-v2 is not set
+# CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wr841hp-v2 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wr841hp-v3 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wr842n-v1 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_tplink_tl-wr842n-v2 is not set
@@ -346,6 +347,7 @@ CONFIG_TARGET_MULTI_PROFILE=y
 # CONFIG_TARGET_ath79_generic_DEVICE_ubnt_litebeam-ac-gen2 is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_ubnt_nanobeam-ac is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_ubnt_nanobeam-ac-gen2 is not set
+# CONFIG_TARGET_ath79_generic_DEVICE_ubnt_nanobeam-ac-xc is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_ubnt_nanobridge-m is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_ubnt_nanostation-ac is not set
 # CONFIG_TARGET_ath79_generic_DEVICE_ubnt_nanostation-ac-loco is not set
@@ -498,6 +500,7 @@ CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_nec_wg800hp=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_nec_wg800hp="ath10k-board-qca9887 ath10k-firmware-qca9887-ct-full-htt kmod-ath10k-ct-smallbuffers kmod-ath9k kmod-ath9k-common kmod-gpio-button-hotplug kmod-hwmon-core wpad-basic-wolfssl"
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_netgear_ex6400 is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_netgear_ex7300 is not set
+# CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_netgear_ex7300-v2 is not set
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_netgear_wndr3700=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_netgear_wndr3700="blockd block-mount kmod-ath9k kmod-ath9k-common kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-msdos kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-leds-reset kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-owl-loader kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb-ohci kmod-usb-storage kmod-usb-storage-uas luci-app-ledtrig-usbport wpad-basic-wolfssl"
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_netgear_wndr3700-v2 is not set
@@ -575,9 +578,9 @@ CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_pisen_ts-d084="blockd block-m
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_archer-c58-v1=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-c58-v1="ath10k-board-qca9888 ath10k-firmware-qca9888-ct kmod-ath10k-ct-smallbuffers kmod-ath9k kmod-ath9k-common kmod-gpio-button-hotplug kmod-hwmon-core wpad-basic-wolfssl"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_archer-c59-v1=y
-CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-c59-v1="ath10k-board-qca9888 ath10k-firmware-qca9888-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-c59-v1="ath10k-board-qca9888 ath10k-firmware-qca9888-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-oid-registry kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_archer-c59-v2=y
-CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-c59-v2="ath10k-board-qca9888 ath10k-firmware-qca9888-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-c59-v2="ath10k-board-qca9888 ath10k-firmware-qca9888-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-oid-registry kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_archer-c6-v2 is not set
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_archer-c60-v1=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-c60-v1="ath10k-board-qca9888 ath10k-firmware-qca9888-ct kmod-ath10k-ct-smallbuffers kmod-ath9k kmod-ath9k-common kmod-gpio-button-hotplug kmod-hwmon-core wpad-basic-wolfssl"
@@ -594,9 +597,9 @@ CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-c7-v2="ath10k-b
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_archer-d50-v1=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-d50-v1="ath10k-board-qca988x ath10k-firmware-qca988x-ct kmod-ath10k-ct-smallbuffers kmod-ath9k kmod-ath9k-common kmod-gpio-button-hotplug kmod-hwmon-core kmod-phy-ath79-usb kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport luci-app-ledtrig-usbport wpad-basic-wolfssl"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_archer-d7-v1=y
-CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-d7-v1="ath10k-board-qca988x ath10k-firmware-qca988x-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-d7-v1="ath10k-board-qca988x ath10k-firmware-qca988x-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-oid-registry kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_archer-d7b-v1=y
-CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-d7b-v1="ath10k-board-qca988x ath10k-firmware-qca988x-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_archer-d7b-v1="ath10k-board-qca988x ath10k-firmware-qca988x-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-oid-registry kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_cpe210-v1 is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_cpe210-v2 is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_cpe210-v3 is not set
@@ -633,7 +636,7 @@ CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_tl-wdr4300-v1="blockd 
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wdr4900-v2=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_tl-wdr4900-v2="blockd block-mount kmod-ath9k kmod-ath9k-common kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-msdos kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb-ohci kmod-usb-storage kmod-usb-storage-uas luci-app-ledtrig-usbport wpad-basic-wolfssl"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wdr4900-v2-16m=y
-CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_tl-wdr4900-v2-16m="blockd block-mount chat comgt comgt-ncm kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_tl-wdr4900-v2-16m="blockd block-mount chat comgt comgt-ncm kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-oid-registry kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-usbport luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wdr7500-v3=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_tl-wdr7500-v3="ath10k-board-qca988x ath10k-firmware-qca988x-ct blockd block-mount kmod-ath10k-ct kmod-ath9k kmod-ath9k-common kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-msdos kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb-ohci kmod-usb-storage kmod-usb-storage-uas luci-app-ledtrig-usbport wpad-basic-wolfssl"
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wpa8630-v1 is not set
@@ -659,6 +662,7 @@ CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wr810n-v1=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_tl-wr810n-v1="blockd block-mount kmod-ath9k kmod-ath9k-common kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-msdos kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb-ohci kmod-usb-storage kmod-usb-storage-uas luci-app-ledtrig-usbport wpad-basic-wolfssl"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wr810n-v2=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_tplink_tl-wr810n-v2="kmod-ath9k kmod-ath9k-common kmod-gpio-button-hotplug wpad-basic-wolfssl"
+# CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wr841hp-v2 is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wr841hp-v3 is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wr842n-v3 is not set
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_tplink_tl-wr842n-v1=y
@@ -687,12 +691,13 @@ CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_lap-120=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_lap-120="ath10k-board-qca988x ath10k-firmware-qca988x-ct kmod-ath10k-ct-smallbuffers kmod-ath9k kmod-ath9k-common kmod-gpio-button-hotplug kmod-hwmon-core kmod-phy-ath79-usb kmod-usb2 kmod-usb-core kmod-usb-ehci liblzo libopenssl libopenssl-conf libpcre libqrencode libstdcpp libxml2 luci-app-openvpn luci-app-wireguard luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-wireguard luci-ssl-nginx nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl qrencode uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wireguard-tools wpad-openssl"
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_litebeam-ac-gen2 is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_nanobeam-ac is not set
+# CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_nanobeam-ac-xc is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_nanobeam-ac-gen2 is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_nanobridge-m is not set
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_nanostation-ac=y
-CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_nanostation-ac="ath10k-board-qca988x ath10k-firmware-qca988x-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct-smallbuffers kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-rssi luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware rssileds umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_nanostation-ac="ath10k-board-qca988x ath10k-firmware-qca988x-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct-smallbuffers kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-oid-registry kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-ledtrig-rssi luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware rssileds umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_nanostation-ac-loco=y
-CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_nanostation-ac-loco="ath10k-board-qca988x ath10k-firmware-qca988x-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct-smallbuffers kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_nanostation-ac-loco="ath10k-board-qca988x ath10k-firmware-qca988x-ct blockd block-mount chat comgt comgt-ncm kmod-ath10k-ct-smallbuffers kmod-ath9k kmod-ath9k-common kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-hwmon-core kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-oid-registry kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_nanostation-loco-m is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_nanostation-loco-m-xw is not set
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_nanostation-m=y
@@ -709,9 +714,9 @@ CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_nanostation-m-xw="kmod-a
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_rocket-m=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_rocket-m="blockd block-mount kmod-ath9k kmod-ath9k-common kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-msdos kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb-ohci kmod-usb-storage kmod-usb-storage-uas luci-app-ledtrig-rssi rssileds wpad-basic-wolfssl"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_routerstation=y
-CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_routerstation="blockd block-mount chat comgt comgt-ncm fconfig kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_routerstation="blockd block-mount chat comgt comgt-ncm fconfig kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-oid-registry kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_routerstation-pro=y
-CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_routerstation-pro="blockd block-mount chat comgt comgt-ncm fconfig kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_routerstation-pro="blockd block-mount chat comgt comgt-ncm fconfig kmod-crypto-cbc kmod-crypto-cts kmod-crypto-des kmod-crypto-md4 kmod-crypto-md5 kmod-dnsresolver kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-ksmbd kmod-fs-msdos kmod-fs-nfs kmod-fs-nfs-common kmod-fs-nfs-common-rpcsec kmod-fs-nfs-v4 kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-oid-registry kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-cdc-mbim kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-ipheth kmod-usb-net-qmi-wwan kmod-usb-net-rndis kmod-usb-net-rtl8152 kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-printer kmod-usb-serial kmod-usb-serial-option kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-serial-wwan kmod-usb-storage kmod-usb-storage-uas kmod-usb-wdm ksmbd-server ksmbd-utils libblkid libevdev libimobiledevice libimobiledevice-utils liblzo libnl-core libnl-genl libopenssl libopenssl-conf libpcre libplist libqrencode libstdcpp libudev-zero libusb-1.0 libusbmuxd libwrap libxml2 luci-app-ksmbd luci-app-openvpn luci-app-p910nd luci-app-wireguard luci-i18n-ksmbd-en luci-i18n-ksmbd-zh-cn luci-i18n-openvpn-en luci-i18n-openvpn-zh-cn luci-i18n-p910nd-en luci-i18n-p910nd-zh-cn luci-i18n-wireguard-en luci-i18n-wireguard-zh-cn luci-proto-3g luci-proto-mbim luci-proto-ncm luci-proto-qmi luci-proto-wireguard luci-ssl-nginx nfs-utils nginx nginx-mod-luci nginx-mod-luci-ssl nginx-ssl nginx-ssl-util nginx-util openssl-util openvpn-openssl p910nd qrencode r8152-firmware umbim uqmi usb-modeswitch usbmuxd usbutils uwsgi uwsgi-cgi-plugin uwsgi-luci-support uwsgi-syslog-plugin wget-ssl wireguard-tools wpad-openssl wsdd2 wwan"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_unifi=y
 CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_unifi="blockd block-mount kmod-ath9k kmod-ath9k-common kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-msdos kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb-ohci kmod-usb-storage kmod-usb-storage-uas wpad-basic-wolfssl"
 CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_ubnt_unifiac-lite=y
@@ -736,7 +741,8 @@ CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_ubnt_unifiac-pro="ath10k-boar
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_xwrt_csac2 is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_xwrt_gw521-16m is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_xwrt_m-ap300g is not set
-# CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_xwrt_mk-v0201 is not set
+CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_xwrt_mk-v0201=y
+CONFIG_TARGET_DEVICE_PACKAGES_ath79_generic_DEVICE_xwrt_mk-v0201="blockd block-mount kmod-ath9k kmod-ath9k-common kmod-exfat-linux kmod-fs-autofs4 kmod-fs-ext4 kmod-fs-msdos kmod-fs-ntfs3 kmod-fs-vfat kmod-fuse kmod-gpio-button-hotplug kmod-leds-gpio kmod-lib-crc16 kmod-mii kmod-nls-cp437 kmod-phy-ath79-usb kmod-scsi-core kmod-usb2 kmod-usb-core kmod-usb-ehci kmod-usb-ledtrig-usbport kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb-ohci kmod-usb-storage kmod-usb-storage-uas luci-app-ledtrig-rssi luci-app-ledtrig-usbport rssileds wpad-basic-wolfssl"
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_xwrt_xd1202g is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_yuncore_a770 is not set
 # CONFIG_TARGET_DEVICE_ath79_generic_DEVICE_yuncore_a782 is not set
@@ -769,14 +775,10 @@ CONFIG_MODULE_DEFAULT_dnsmasq=y
 CONFIG_DEFAULT_dropbear=y
 CONFIG_MODULE_DEFAULT_dropbear=y
 CONFIG_MODULE_DEFAULT_fconfig=y
-CONFIG_DEFAULT_firewall=y
-CONFIG_MODULE_DEFAULT_firewall=y
+CONFIG_DEFAULT_firewall4=y
+CONFIG_MODULE_DEFAULT_firewall4=y
 CONFIG_DEFAULT_fstools=y
 CONFIG_MODULE_DEFAULT_fstools=y
-CONFIG_DEFAULT_ip6tables=y
-CONFIG_MODULE_DEFAULT_ip6tables=y
-CONFIG_DEFAULT_iptables=y
-CONFIG_MODULE_DEFAULT_iptables=y
 CONFIG_DEFAULT_iwinfo=y
 CONFIG_MODULE_DEFAULT_iwinfo=y
 CONFIG_MODULE_DEFAULT_kmod-ath10k-ct=y
@@ -785,11 +787,13 @@ CONFIG_DEFAULT_kmod-ath9k=y
 CONFIG_MODULE_DEFAULT_kmod-ath9k=y
 CONFIG_DEFAULT_kmod-gpio-button-hotplug=y
 CONFIG_MODULE_DEFAULT_kmod-gpio-button-hotplug=y
-CONFIG_DEFAULT_kmod-ipt-offload=y
-CONFIG_MODULE_DEFAULT_kmod-ipt-offload=y
+CONFIG_MODULE_DEFAULT_kmod-leds-gpio=y
 CONFIG_MODULE_DEFAULT_kmod-leds-reset=y
+CONFIG_DEFAULT_kmod-nft-offload=y
+CONFIG_MODULE_DEFAULT_kmod-nft-offload=y
 CONFIG_MODULE_DEFAULT_kmod-owl-loader=y
 CONFIG_MODULE_DEFAULT_kmod-usb-chipidea2=y
+CONFIG_MODULE_DEFAULT_kmod-usb-core=y
 CONFIG_MODULE_DEFAULT_kmod-usb-ledtrig-usbport=y
 CONFIG_MODULE_DEFAULT_kmod-usb-ohci=y
 CONFIG_MODULE_DEFAULT_kmod-usb2=y
@@ -805,6 +809,8 @@ CONFIG_DEFAULT_mtd=y
 CONFIG_MODULE_DEFAULT_mtd=y
 CONFIG_DEFAULT_netifd=y
 CONFIG_MODULE_DEFAULT_netifd=y
+CONFIG_DEFAULT_nftables=y
+CONFIG_MODULE_DEFAULT_nftables=y
 CONFIG_DEFAULT_odhcp6c=y
 CONFIG_MODULE_DEFAULT_odhcp6c=y
 CONFIG_DEFAULT_odhcpd-ipv6only=y
@@ -966,6 +972,7 @@ CONFIG_KERNEL_IPV6_MROUTE_MULTIPLE_TABLES=y
 CONFIG_KERNEL_IPV6_PIMSM_V2=y
 CONFIG_KERNEL_IPV6_SEG6_LWTUNNEL=y
 # CONFIG_KERNEL_LWTUNNEL_BPF is not set
+# CONFIG_KERNEL_NET_L3_MASTER_DEV is not set
 # CONFIG_KERNEL_IP_PNP is not set
 
 #
@@ -1103,7 +1110,7 @@ CONFIG_TARGET_INIT_CMD="/sbin/init"
 CONFIG_TARGET_INIT_SUPPRESS_STDERR=y
 CONFIG_VERSIONOPT=y
 CONFIG_VERSION_DIST="X-WRT"
-CONFIG_VERSION_NUMBER="21.10_b202201172351"
+CONFIG_VERSION_NUMBER="21.10_b202202222222"
 CONFIG_VERSION_CODE="Impish"
 CONFIG_VERSION_REPO="http://downloads.openwrt.org/snapshots"
 CONFIG_VERSION_HOME_URL="https://x-wrt.com/"
@@ -3152,8 +3159,8 @@ CONFIG_DROPBEAR_AGENTFORWARD=y
 # end of Configuration
 
 # CONFIG_PACKAGE_ead is not set
-CONFIG_PACKAGE_firewall=y
-# CONFIG_PACKAGE_firewall4 is not set
+# CONFIG_PACKAGE_firewall is not set
+CONFIG_PACKAGE_firewall4=y
 CONFIG_PACKAGE_fstools=y
 # CONFIG_FSTOOLS_OVL_MOUNT_FULL_ACCESS_TIME is not set
 # CONFIG_FSTOOLS_OVL_MOUNT_COMPRESS_ZLIB is not set
@@ -3172,7 +3179,6 @@ CONFIG_PACKAGE_mtd=y
 CONFIG_PACKAGE_netifd=y
 # CONFIG_PACKAGE_nft-qos is not set
 CONFIG_PACKAGE_nvram=m
-# CONFIG_PACKAGE_om-watchdog is not set
 CONFIG_PACKAGE_openwrt-keyring=y
 CONFIG_PACKAGE_opkg=y
 CONFIG_PACKAGE_procd=y
@@ -3192,6 +3198,7 @@ CONFIG_PACKAGE_rpcd=y
 CONFIG_PACKAGE_rpcd-mod-file=y
 CONFIG_PACKAGE_rpcd-mod-iwinfo=y
 # CONFIG_PACKAGE_rpcd-mod-rpcsys is not set
+# CONFIG_PACKAGE_rpcd-mod-ucode is not set
 # CONFIG_PACKAGE_selinux-policy is not set
 # CONFIG_PACKAGE_snapshot-tool is not set
 # CONFIG_PACKAGE_sqm-scripts is not set
@@ -3349,8 +3356,6 @@ CONFIG_PACKAGE_ath10k-board-qca9888=m
 CONFIG_PACKAGE_ath10k-board-qca988x=m
 # CONFIG_PACKAGE_ath10k-board-qca9984 is not set
 # CONFIG_PACKAGE_ath10k-board-qca99x0 is not set
-# CONFIG_PACKAGE_ath10k-board-qca99x0-2g is not set
-# CONFIG_PACKAGE_ath10k-board-qca99x0-5g is not set
 # CONFIG_PACKAGE_ath10k-firmware-qca4019 is not set
 # CONFIG_PACKAGE_ath10k-firmware-qca4019-ct is not set
 # CONFIG_PACKAGE_ath10k-firmware-qca4019-ct-full-htt is not set
@@ -3415,6 +3420,7 @@ CONFIG_PACKAGE_ath10k-firmware-qca988x-ct=m
 # CONFIG_PACKAGE_iwl3945-firmware is not set
 # CONFIG_PACKAGE_iwl4965-firmware is not set
 # CONFIG_PACKAGE_iwlwifi-firmware-ax200 is not set
+# CONFIG_PACKAGE_iwlwifi-firmware-ax210 is not set
 # CONFIG_PACKAGE_iwlwifi-firmware-iwl100 is not set
 # CONFIG_PACKAGE_iwlwifi-firmware-iwl1000 is not set
 # CONFIG_PACKAGE_iwlwifi-firmware-iwl105 is not set
@@ -3653,6 +3659,12 @@ CONFIG_PACKAGE_kmod-fuse=m
 # end of FireWire support
 
 #
+# GPIO support
+#
+# CONFIG_PACKAGE_kmod-gpio-cascade is not set
+# end of GPIO support
+
+#
 # Hardware Monitoring Support
 #
 # CONFIG_PACKAGE_kmod-gl-mifi-mcu is not set
@@ -3669,6 +3681,7 @@ CONFIG_PACKAGE_kmod-hwmon-core=m
 # CONFIG_PACKAGE_kmod-hwmon-ina2xx is not set
 # CONFIG_PACKAGE_kmod-hwmon-it87 is not set
 # CONFIG_PACKAGE_kmod-hwmon-lm63 is not set
+# CONFIG_PACKAGE_kmod-hwmon-lm70 is not set
 # CONFIG_PACKAGE_kmod-hwmon-lm75 is not set
 # CONFIG_PACKAGE_kmod-hwmon-lm77 is not set
 # CONFIG_PACKAGE_kmod-hwmon-lm85 is not set
@@ -3766,7 +3779,7 @@ CONFIG_PACKAGE_kmod-input-core=m
 # LED modules
 #
 # CONFIG_PACKAGE_kmod-input-leds is not set
-# CONFIG_PACKAGE_kmod-leds-gpio is not set
+CONFIG_PACKAGE_kmod-leds-gpio=m
 # CONFIG_PACKAGE_kmod-leds-pca963x is not set
 CONFIG_PACKAGE_kmod-leds-reset=m
 # CONFIG_PACKAGE_kmod-leds-tlc591xx is not set
@@ -3793,7 +3806,14 @@ CONFIG_PACKAGE_kmod-lib-crc32c=y
 # CONFIG_PACKAGE_kmod-lib-lz4 is not set
 CONFIG_PACKAGE_kmod-lib-textsearch=y
 # CONFIG_PACKAGE_kmod-lib-zstd is not set
+CONFIG_PACKAGE_kmod-oid-registry=m
 # end of Libraries
+
+#
+# Multiplexer Support
+#
+# CONFIG_PACKAGE_kmod-mux-core is not set
+# end of Multiplexer Support
 
 #
 # Native Language Support
@@ -3890,7 +3910,7 @@ CONFIG_PACKAGE_kmod-ipt-tproxy=y
 CONFIG_PACKAGE_kmod-nf-conntrack=y
 CONFIG_PACKAGE_kmod-nf-conntrack-netlink=y
 CONFIG_PACKAGE_kmod-nf-conntrack6=y
-CONFIG_PACKAGE_kmod-nf-flow=m
+CONFIG_PACKAGE_kmod-nf-flow=y
 CONFIG_PACKAGE_kmod-nf-ipt=y
 CONFIG_PACKAGE_kmod-nf-ipt6=y
 # CONFIG_PACKAGE_kmod-nf-ipvs is not set
@@ -3905,12 +3925,13 @@ CONFIG_PACKAGE_kmod-nfnetlink=y
 CONFIG_PACKAGE_kmod-nfnetlink-queue=y
 # CONFIG_PACKAGE_kmod-nft-arp is not set
 CONFIG_PACKAGE_kmod-nft-bridge=y
+CONFIG_PACKAGE_kmod-nft-compat=y
 CONFIG_PACKAGE_kmod-nft-core=y
-# CONFIG_PACKAGE_kmod-nft-fib is not set
-# CONFIG_PACKAGE_kmod-nft-nat is not set
-# CONFIG_PACKAGE_kmod-nft-nat6 is not set
+CONFIG_PACKAGE_kmod-nft-fib=y
+CONFIG_PACKAGE_kmod-nft-nat=y
+CONFIG_PACKAGE_kmod-nft-nat6=y
 CONFIG_PACKAGE_kmod-nft-netdev=y
-# CONFIG_PACKAGE_kmod-nft-offload is not set
+CONFIG_PACKAGE_kmod-nft-offload=y
 # CONFIG_PACKAGE_kmod-nft-queue is not set
 # end of Netfilter Extensions
 
@@ -4022,7 +4043,7 @@ CONFIG_PACKAGE_kmod-iptunnel=y
 CONFIG_PACKAGE_kmod-iptunnel4=y
 CONFIG_PACKAGE_kmod-iptunnel6=y
 # CONFIG_PACKAGE_kmod-isdn4linux is not set
-CONFIG_PACKAGE_kmod-jool=m
+CONFIG_PACKAGE_kmod-jool-netfilter=m
 # CONFIG_PACKAGE_kmod-l2tp is not set
 # CONFIG_PACKAGE_kmod-l2tp-eth is not set
 # CONFIG_PACKAGE_kmod-l2tp-ip is not set
@@ -4093,7 +4114,6 @@ CONFIG_PACKAGE_kmod-wireguard=y
 # CONFIG_PACKAGE_kmod-gpio-beeper is not set
 CONFIG_PACKAGE_kmod-gpio-button-hotplug=m
 # CONFIG_PACKAGE_kmod-gpio-mcp23s08 is not set
-# CONFIG_PACKAGE_kmod-gpio-nxp-74hc153 is not set
 # CONFIG_PACKAGE_kmod-gpio-nxp-74hc164 is not set
 # CONFIG_PACKAGE_kmod-gpio-pca953x is not set
 # CONFIG_PACKAGE_kmod-gpio-pcf857x is not set
@@ -4450,6 +4470,7 @@ CONFIG_GOLANG_BUILD_CACHE_DIR=""
 #
 # Lua
 #
+# CONFIG_PACKAGE_cqueues is not set
 # CONFIG_PACKAGE_dkjson is not set
 # CONFIG_PACKAGE_json4lua is not set
 # CONFIG_PACKAGE_ldbus is not set
@@ -4464,6 +4485,7 @@ CONFIG_PACKAGE_lua=y
 CONFIG_PACKAGE_lua-cjson=y
 # CONFIG_PACKAGE_lua-copas is not set
 # CONFIG_PACKAGE_lua-coxpcall is not set
+# CONFIG_PACKAGE_lua-cs-bouncer is not set
 # CONFIG_PACKAGE_lua-curl-v3 is not set
 # CONFIG_PACKAGE_lua-ev is not set
 # CONFIG_PACKAGE_lua-examples is not set
@@ -4837,7 +4859,7 @@ CONFIG_SQLITE3_RTREE=y
 CONFIG_PACKAGE_libip4tc=y
 CONFIG_PACKAGE_libip6tc=y
 CONFIG_PACKAGE_libxtables=y
-# CONFIG_PACKAGE_libxtables-nft is not set
+CONFIG_PACKAGE_libxtables-nft=y
 # end of Firewall
 
 #
@@ -5469,7 +5491,7 @@ CONFIG_PACKAGE_libusbmuxd=m
 # CONFIG_PACKAGE_icu is not set
 # CONFIG_PACKAGE_icu-data-tools is not set
 # CONFIG_PACKAGE_icu-full-data is not set
-# CONFIG_PACKAGE_jansson is not set
+CONFIG_PACKAGE_jansson=y
 # CONFIG_PACKAGE_json-glib is not set
 # CONFIG_PACKAGE_jsoncpp is not set
 # CONFIG_PACKAGE_knot-libs is not set
@@ -5849,6 +5871,7 @@ CONFIG_PACKAGE_rpcd-mod-rrdns=y
 # CONFIG_PACKAGE_taglib is not set
 CONFIG_PACKAGE_terminfo=y
 # CONFIG_PACKAGE_tinycdb is not set
+# CONFIG_PACKAGE_totem-pl-parser is not set
 # CONFIG_PACKAGE_uw-imap is not set
 # CONFIG_PACKAGE_xmlrpc-c is not set
 # CONFIG_PACKAGE_xmlrpc-c-client is not set
@@ -6649,9 +6672,10 @@ CONFIG_KSMBD_UTILS_SHAREADD=y
 CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ip6tables-extra=y
 CONFIG_PACKAGE_ip6tables-mod-nat=y
+CONFIG_PACKAGE_ip6tables-nft=y
 CONFIG_PACKAGE_iptables=y
 # CONFIG_IPTABLES_CONNLABEL is not set
-# CONFIG_IPTABLES_NFTABLES is not set
+CONFIG_IPTABLES_NFTABLES=y
 # CONFIG_PACKAGE_iptables-mod-account is not set
 # CONFIG_PACKAGE_iptables-mod-chaos is not set
 # CONFIG_PACKAGE_iptables-mod-checksum is not set
@@ -6695,6 +6719,7 @@ CONFIG_PACKAGE_iptables-mod-tproxy=y
 # CONFIG_PACKAGE_iptables-mod-trace is not set
 # CONFIG_PACKAGE_iptables-mod-u32 is not set
 # CONFIG_PACKAGE_iptables-mod-ulog is not set
+CONFIG_PACKAGE_iptables-nft=y
 # CONFIG_PACKAGE_iptaccount is not set
 # CONFIG_PACKAGE_iptgeoip is not set
 
@@ -6705,11 +6730,11 @@ CONFIG_PACKAGE_iptables-mod-tproxy=y
 # end of Select iptgeoip options
 
 # CONFIG_PACKAGE_miniupnpc is not set
-CONFIG_PACKAGE_miniupnpd-iptables=y
-# CONFIG_PACKAGE_miniupnpd-nftables is not set
+# CONFIG_PACKAGE_miniupnpd-iptables is not set
+CONFIG_PACKAGE_miniupnpd-nftables=y
 # CONFIG_PACKAGE_natpmpc is not set
-# CONFIG_PACKAGE_nftables-json is not set
-CONFIG_PACKAGE_nftables-nojson=y
+CONFIG_PACKAGE_nftables-json=y
+# CONFIG_PACKAGE_nftables-nojson is not set
 # CONFIG_PACKAGE_shorewall is not set
 # CONFIG_PACKAGE_shorewall-core is not set
 # CONFIG_PACKAGE_shorewall-lite is not set
@@ -6766,6 +6791,7 @@ CONFIG_PACKAGE_ddns-scripts=y
 # CONFIG_PACKAGE_ddns-scripts-noip is not set
 # CONFIG_PACKAGE_ddns-scripts-ns1 is not set
 # CONFIG_PACKAGE_ddns-scripts-nsupdate is not set
+# CONFIG_PACKAGE_ddns-scripts-one is not set
 # CONFIG_PACKAGE_ddns-scripts-pdns is not set
 # CONFIG_PACKAGE_ddns-scripts-route53 is not set
 CONFIG_PACKAGE_ddns-scripts-services=y
@@ -7109,7 +7135,6 @@ CONFIG_PACKAGE_mwan3plus=y
 # CONFIG_PACKAGE_kamailio is not set
 # CONFIG_PACKAGE_miax is not set
 # CONFIG_PACKAGE_pcapsipdump is not set
-# CONFIG_PACKAGE_restund is not set
 # CONFIG_PACKAGE_rtpengine is not set
 # CONFIG_PACKAGE_rtpengine-no-transcode is not set
 # CONFIG_PACKAGE_rtpengine-recording is not set
@@ -7313,6 +7338,7 @@ CONFIG_PACKAGE_nginx-ssl-util=m
 CONFIG_PACKAGE_uhttpd=y
 # CONFIG_PACKAGE_uhttpd-mod-lua is not set
 CONFIG_PACKAGE_uhttpd-mod-ubus=y
+# CONFIG_PACKAGE_uhttpd-mod-ucode is not set
 CONFIG_PACKAGE_uwsgi=m
 CONFIG_PACKAGE_uwsgi-cgi-plugin=m
 # CONFIG_PACKAGE_uwsgi-logfile-plugin is not set
@@ -7487,7 +7513,7 @@ CONFIG_PACKAGE_ipset=y
 # CONFIG_PACKAGE_irtt is not set
 CONFIG_PACKAGE_iw=y
 # CONFIG_PACKAGE_iw-full is not set
-CONFIG_PACKAGE_jool-tools=m
+CONFIG_PACKAGE_jool-tools-netfilter=m
 # CONFIG_PACKAGE_keepalived is not set
 # CONFIG_PACKAGE_knxd is not set
 # CONFIG_PACKAGE_kplex is not set
@@ -7560,6 +7586,7 @@ CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
 # CONFIG_PACKAGE_oping is not set
 # CONFIG_PACKAGE_ostiary is not set
 # CONFIG_PACKAGE_pagekitec is not set
+# CONFIG_PACKAGE_pcapplusplus is not set
 # CONFIG_PACKAGE_pen is not set
 # CONFIG_PACKAGE_phantap is not set
 # CONFIG_PACKAGE_phytool is not set
@@ -7632,6 +7659,7 @@ CONFIG_PACKAGE_rssileds=m
 # CONFIG_PACKAGE_travelmate is not set
 # CONFIG_PACKAGE_u2pnpd is not set
 # CONFIG_PACKAGE_uacme is not set
+# CONFIG_PACKAGE_uacme-ualpn is not set
 CONFIG_PACKAGE_uclient-fetch=y
 # CONFIG_PACKAGE_udhcpsnoop is not set
 # CONFIG_PACKAGE_udptunnel is not set
@@ -7651,7 +7679,6 @@ CONFIG_PACKAGE_umdns=m
 # CONFIG_PACKAGE_vxlan is not set
 # CONFIG_PACKAGE_wakeonlan is not set
 # CONFIG_PACKAGE_wg-installer-client is not set
-# CONFIG_PACKAGE_wg-installer-server is not set
 # CONFIG_PACKAGE_wpan-tools is not set
 CONFIG_PACKAGE_wwan=m
 # CONFIG_PACKAGE_xinetd is not set
@@ -7796,6 +7823,7 @@ CONFIG_PACKAGE_uboot-envtools=y
 # CONFIG_PACKAGE_jupp is not set
 # CONFIG_PACKAGE_mg is not set
 # CONFIG_PACKAGE_nano is not set
+# CONFIG_PACKAGE_nano-plus is not set
 # CONFIG_PACKAGE_vim is not set
 # CONFIG_PACKAGE_vim-full is not set
 # CONFIG_PACKAGE_vim-fuller is not set
@@ -8134,6 +8162,7 @@ CONFIG_PACKAGE_usbmuxd=m
 # CONFIG_PACKAGE_inotifywait is not set
 # CONFIG_PACKAGE_inotifywatch is not set
 # CONFIG_PACKAGE_io is not set
+# CONFIG_PACKAGE_ipcs is not set
 # CONFIG_PACKAGE_ipfs-http-client-tests is not set
 # CONFIG_PACKAGE_irqbalance is not set
 # CONFIG_PACKAGE_iwcap is not set
@@ -8148,7 +8177,7 @@ CONFIG_PACKAGE_jshn=y
 # CONFIG_PACKAGE_less is not set
 CONFIG_PACKAGE_libjson-script=y
 # CONFIG_PACKAGE_libnetwork is not set
-# CONFIG_PACKAGE_libucode is not set
+CONFIG_PACKAGE_libucode=y
 # CONFIG_PACKAGE_libxml2-utils is not set
 # CONFIG_PACKAGE_lm-sensors is not set
 # CONFIG_PACKAGE_lm-sensors-detect is not set
@@ -8159,6 +8188,7 @@ CONFIG_PACKAGE_libjson-script=y
 # CONFIG_PACKAGE_losetup is not set
 # CONFIG_PACKAGE_lrzsz is not set
 # CONFIG_PACKAGE_lscpu is not set
+# CONFIG_PACKAGE_lslocks is not set
 CONFIG_PACKAGE_lsof=y
 # CONFIG_PACKAGE_lxc is not set
 # CONFIG_PACKAGE_maccalc is not set
@@ -8263,6 +8293,7 @@ CONFIG_PACKAGE_qrencode=m
 # CONFIG_PACKAGE_setools is not set
 # CONFIG_PACKAGE_setserial is not set
 # CONFIG_PACKAGE_shadow-utils is not set
+# CONFIG_PACKAGE_shared-mime-info is not set
 # CONFIG_PACKAGE_sipcalc is not set
 # CONFIG_PACKAGE_sispmctl is not set
 # CONFIG_PACKAGE_slide-switch is not set
@@ -8289,6 +8320,7 @@ CONFIG_STRACE_NONE=y
 # CONFIG_PACKAGE_sysrepoctl is not set
 # CONFIG_PACKAGE_sysstat is not set
 # CONFIG_PACKAGE_tar is not set
+# CONFIG_PACKAGE_taskset is not set
 # CONFIG_PACKAGE_taskwarrior is not set
 # CONFIG_PACKAGE_telegraf is not set
 # CONFIG_PACKAGE_telegraf-full is not set
@@ -8296,10 +8328,19 @@ CONFIG_STRACE_NONE=y
 # CONFIG_PACKAGE_temperusb is not set
 # CONFIG_PACKAGE_tesseract is not set
 # CONFIG_PACKAGE_tini is not set
+# CONFIG_PACKAGE_tinyionice is not set
 # CONFIG_PACKAGE_tracertools is not set
 # CONFIG_PACKAGE_tree is not set
 # CONFIG_PACKAGE_triggerhappy is not set
-# CONFIG_PACKAGE_ucode is not set
+CONFIG_PACKAGE_ucode=y
+CONFIG_PACKAGE_ucode-mod-fs=y
+# CONFIG_PACKAGE_ucode-mod-math is not set
+# CONFIG_PACKAGE_ucode-mod-nl80211 is not set
+# CONFIG_PACKAGE_ucode-mod-resolv is not set
+# CONFIG_PACKAGE_ucode-mod-rtnl is not set
+# CONFIG_PACKAGE_ucode-mod-struct is not set
+CONFIG_PACKAGE_ucode-mod-ubus=y
+CONFIG_PACKAGE_ucode-mod-uci=y
 # CONFIG_PACKAGE_udns-dnsget is not set
 # CONFIG_PACKAGE_udns-ex-rdns is not set
 # CONFIG_PACKAGE_udns-rblcheck is not set
